@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Colman24Class2</string>
+    <string name="add_student">Add Student</string>
+    <string name="student_picture">Student Picture</string>
+    <string name="back">Back</string>
+
+</resources>

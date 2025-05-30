@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Student Picture -->
+    <ImageView
+        android:id="@+id/imageViewStudentPic"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/avatar"
+        android:contentDescription="@string/student_picture"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clipToOutline="true"
+        app:shapeAppearanceOverlay="@style/ShapeAppearance.Material3.Corner.Full"/>
+
+    <!-- Student Name -->
+    <TextView
+        android:id="@+id/textViewStudentName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Student Name"
+        android:textAppearance="?attr/textAppearanceBody1"
+        app:layout_constraintStart_toEndOf="@id/imageViewStudentPic"
+        app:layout_constraintTop_toTopOf="@id/imageViewStudentPic"
+        app:layout_constraintEnd_toStartOf="@id/checkBoxStudentChecked"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <!-- Student ID -->
+    <TextView
+        android:id="@+id/textViewStudentId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="123456"
+        android:textAppearance="?attr/textAppearanceBody2"
+        android:textColor="?attr/colorOnSurfaceVariant"
+        app:layout_constraintStart_toStartOf="@id/textViewStudentName"
+        app:layout_constraintTop_toBottomOf="@id/textViewStudentName"
+        app:layout_constraintEnd_toEndOf="@id/textViewStudentName"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <!-- Checkbox -->
+    <CheckBox
+        android:id="@+id/checkBoxStudentChecked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
