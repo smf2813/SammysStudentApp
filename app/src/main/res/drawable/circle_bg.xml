@@ -1,0 +1,17 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Inner fill color -->
+    <solid android:color="#FFFFFF" /> <!-- White background -->
+
+    <!-- Dual-color stroke (red outer + blue inner) -->
+    <stroke
+        android:width="4dp"
+        android:color="@android:color/holo_red_dark" />
+
+    <padding
+        android:left="2dp"
+        android:top="2dp"
+        android:right="2dp"
+        android:bottom="2dp" />
+</shape>
